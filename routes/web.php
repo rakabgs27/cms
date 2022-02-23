@@ -50,6 +50,7 @@ Route::get('/home', function () {
     echo "Hi! Selamat Datang di Halaman HOME";
 });
 
+//Halaman Products
 Route::prefix('category') -> group(function(){
     Route::get("/marbel-edu-games", function(){
         echo "Tampilan marbel edu games";
@@ -65,6 +66,7 @@ Route::prefix('category') -> group(function(){
     });
 });
 
+//Halaman News
 Route::prefix('news') -> group(function(){
     Route::get("", function(){
         echo "Tampilan news";
@@ -74,6 +76,7 @@ Route::prefix('news') -> group(function(){
     });
 });
 
+//Halaman Program
 Route::prefix('program') -> group(function(){
     Route::get("/karir" , function(){
         echo "Tampilan karir";
@@ -86,6 +89,7 @@ Route::prefix('program') -> group(function(){
     });
 });
 
+//Halaman About Us
 Route::get("/about-us" , function(){
     echo "ABOUT US <br><br> Raka Bagas Fitriansyah <br> 2041720187 <br> TI - 2G";
 });
