@@ -18,9 +18,9 @@ use App\Http\Controllers\ArticleController;
 */
 
 //Praktikum 1
-Route::get('/', function () {
-    echo "Hi! Selamat Datang di Website Laravel";
-});
+// Route::get('/', function () {
+//     echo "Hi! Selamat Datang di Website Laravel";
+// });
 
 Route::get('/about' , function() {
     echo "2041720187 <br> Raka Bagas Fitriansyah <br> TI-2G";
@@ -31,7 +31,7 @@ Route::get('/articles/{id}' , function($id) {
 });
 
 //Praktikum 2
-Route::get('/', [PageController::class, 'index']); 
+// Route::get('/', [PageController::class, 'index']); 
 
 Route::get('/about', [PageController::class, 'about']); 
 
@@ -95,3 +95,12 @@ Route::get("/about-us" , function(){
 });
 
 
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Praktikum Minggu 3
+Route::get('/', function () {
+    return view('index');
+});
