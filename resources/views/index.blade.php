@@ -12,7 +12,7 @@
                <li data-target="#main_slider" data-slide-to="1"></li>
                <li data-target="#main_slider" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner"><br><br><br>
                <div class="carousel-item active">
                   <div class="container">
                      <div class="row marginii">

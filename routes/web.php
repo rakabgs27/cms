@@ -19,6 +19,10 @@ use App\Http\Controllers\PostController;
 |
 */
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 //Praktikum 1
 // Route::get('/', function () {
 //     echo "Hi! Selamat Datang di Website Laravel";
@@ -48,9 +52,9 @@ Route::get('/articles/{id}', [ArticleController::class, 'articles']);
 
 //Praktikum 3 
 //Halaman Home
-Route::get('/home', function () {
-    echo "Hi! Selamat Datang di Halaman HOME";
-});
+// Route::get('/home', function () {
+//     echo "Hi! Selamat Datang di Halaman HOME";
+// });
 
 //Halaman Products
 Route::prefix('category') -> group(function(){
