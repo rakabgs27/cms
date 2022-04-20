@@ -23,6 +23,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::resource('articles', ArticleController::class);
 //Praktikum 1
 // Route::get('/', function () {
 //     echo "Hi! Selamat Datang di Website Laravel";
